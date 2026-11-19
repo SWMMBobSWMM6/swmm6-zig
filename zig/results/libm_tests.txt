@@ -1,0 +1,52 @@
+# zig/test/run_libm_tests.sh 1000000 1000000, 2026-11-18T19:30:11-05:00, ldd (Ubuntu GLIBC 2.39-0ubuntu8.9) 2.39
+zig 0.15.2
+== vectors.bin
+exp       0 of 1000016 differ, 0 NaN sign, 0 NaN payload   (0.012 us/call)
+log       0 of 1000016 differ, 0 NaN sign, 0 NaN payload   (0.013 us/call)
+log10     0 of 1000016 differ, 0 NaN sign, 0 NaN payload   (0.016 us/call)
+pow       0 of 1000272 differ, 0 NaN sign, 0 NaN payload   (0.020 us/call)
+sin       0 of 1000016 differ, 0 NaN sign, 0 NaN payload   (0.026 us/call)
+cos       0 of 1000016 differ, 0 NaN sign, 0 NaN payload   (0.028 us/call)
+tan       0 of 1000016 differ, 0 NaN sign, 0 NaN payload   (0.030 us/call)
+asin      0 of 1000016 differ, 0 NaN sign, 0 NaN payload   (0.019 us/call)
+acos      0 of 1000016 differ, 0 NaN sign, 0 NaN payload   (0.018 us/call)
+atan      0 of 1000016 differ, 0 NaN sign, 0 NaN payload   (0.021 us/call)
+fma       skipped (1000256 records; the engine does not call it)
+== edge.bin
+exp       0 of 300000 differ, 0 NaN sign, 0 NaN payload   (0.028 us/call)
+log       0 of 200000 differ, 0 NaN sign, 0 NaN payload   (0.010 us/call)
+log10     0 of 300000 differ, 0 NaN sign, 0 NaN payload   (0.012 us/call)
+pow       0 of 700000 differ, 0 NaN sign, 0 NaN payload   (0.024 us/call)
+sin       0 of 300000 differ, 0 NaN sign, 0 NaN payload   (0.037 us/call)
+cos       0 of 300000 differ, 0 NaN sign, 0 NaN payload   (0.036 us/call)
+tan       0 of 300000 differ, 0 NaN sign, 0 NaN payload   (0.041 us/call)
+asin      0 of 300000 differ, 0 NaN sign, 0 NaN payload   (0.015 us/call)
+acos      0 of 300000 differ, 0 NaN sign, 0 NaN payload   (0.015 us/call)
+atan      0 of 300000 differ, 0 NaN sign, 0 NaN payload   (0.017 us/call)
+== vectors2.bin
+cbrt      0 of 1008555 differ, 0 NaN sign, 0 NaN payload   (0.033 us/call)
+hypot     0 of 1001681 differ, 0 NaN sign, 0 NaN payload   (0.026 us/call)
+atan2     0 of 1001681 differ, 0 NaN sign, 0 NaN payload   (0.048 us/call)
+cosh      0 of 1008555 differ, 0 NaN sign, 0 NaN payload   (0.026 us/call)
+sinh      0 of 1008555 differ, 0 NaN sign, 0 NaN payload   (0.030 us/call)
+tanh      0 of 1008555 differ, 0 NaN sign, 0 NaN payload   (0.027 us/call)
+log2      0 of 1008555 differ, 0 NaN sign, 0 NaN payload   (0.017 us/call)
+expm1     0 of 1008555 differ, 0 NaN sign, 0 NaN payload   (0.019 us/call)
+log1p     0 of 1008555 differ, 0 NaN sign, 0 NaN payload   (0.018 us/call)
+frexp     skipped (1000041 records; the engine does not call it)
+ldexp     skipped (1000369 records; the engine does not call it)
+== exact.bin
+sqrt      0 of 1000028 differ, 0 NaN sign, 0 NaN payload   (0.008 us/call)
+floor     0 of 1000028 differ, 0 NaN sign, 0 NaN payload   (0.008 us/call)
+ceil      0 of 1000028 differ, 0 NaN sign, 0 NaN payload   (0.009 us/call)
+trunc     0 of 1000028 differ, 0 NaN sign, 0 NaN payload   (0.008 us/call)
+fabs      0 of 1000028 differ, 0 NaN sign, 0 NaN payload   (0.007 us/call)
+round     0 of 1000028 differ, 0 NaN sign, 0 NaN payload   (0.014 us/call)
+copysign  0 of 1000784 differ, 0 NaN sign, 0 NaN payload   (0.005 us/call)
+records checked: 29364615
+total mismatches: 0
+
+real	0m5.540s
+user	0m4.376s
+sys	0m1.143s
+exit 0

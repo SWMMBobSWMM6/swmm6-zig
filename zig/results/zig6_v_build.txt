@@ -1,0 +1,17 @@
+== clean copy of 6668465 in /dev/shm/zig6_v
+== the translator: tools/cs2x/build_zig.sh
+== the engine, regenerated from cs/gen into /dev/shm/zig6_v/regen and compared with zig/gen/engine.zig and zig/cs2zig_*.txt
+wrote engine.zig, 0 TODO kinds, 0 TODO sites
+zig/gen/engine.zig: 240507 lines, byte-identical to the commit
+zig/cs2zig_runtime.txt: 475 lines, byte-identical to the commit
+zig/cs2zig_todo.txt: 0 lines, byte-identical to the commit
+== the generated runtime file, written again by zig/make_primes.sh
+zig/rt/primes.zig: byte-identical to the commit
+== the engine, built with zig/build.sh and an empty cache (/dev/shm/zig6_v/zigcache)
+-rwxr-xr-x 1 root root 24734560 Nov 18 20:33 zig/bin/openswmm
+zig 0.15.2
+fused multiply-add instructions in the binary: 0
+
+real	4m53.698s
+user	3m7.848s
+sys	0m8.092s

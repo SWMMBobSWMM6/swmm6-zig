@@ -1,0 +1,3 @@
+queued 2026-11-18T20:54:39-05:00 engine /dev/shm/zig6_v/zig/runswmm6_saves.sh
+started 2026-11-18T21:42:27-05:00
+ended 2026-11-18T21:57:21-05:00 rc=0

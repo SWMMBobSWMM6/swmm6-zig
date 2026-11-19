@@ -1,0 +1,1 @@
+zig6_s02: 480 models  PASS 480

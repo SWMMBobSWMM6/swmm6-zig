@@ -1,0 +1,9 @@
+# zig/test/run_std_checks.sh, 2026-11-18T19:35:37-05:00, zig 0.15.2, g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+sort cases: 6447
+  sort, stable_sort, partial_sort (O), libstdc++ and Zig: identical
+  sort, stable_sort, partial_sort (P), libstdc++ and Zig: identical
+  sort, stable_sort, partial_sort (I), libstdc++ and Zig: identical
+  sort, stable_sort, partial_sort (D), libstdc++ and Zig: identical
+hash lines: 167
+  unordered_map / unordered_set order and std::hash, libstdc++ and Zig: identical
+exit 0

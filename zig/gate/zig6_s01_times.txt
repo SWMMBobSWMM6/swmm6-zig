@@ -1,0 +1,4 @@
+queued 2026-11-18T19:52:49-05:00 engine /dev/shm/zig6_eng/cef0570_safe/zig/runswmm6_saves.sh
+started 2026-11-18T20:05:49-05:00
+ended 2026-11-18T20:05:55-05:00 rc=143
+note: the kill at 20:05:55 was meant to cancel the queued run, but the lock had been granted six seconds before; killing flock left gate.py running with the lock (pid 30709, parent 1) after run_chunk.sh had cleaned up its folders. It ran 311 corpus models on the checked build of cef0570 (310 PASS; HRSDtest_cim_7.inp, the model running at 20:05:55, lost the end of its report when its folder was moved) until it was killed by pid at about 20:16. Records: zig/results/zig6_s01_orphaned.jsonl. Not counted as a gate result.

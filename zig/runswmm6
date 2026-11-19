@@ -1,0 +1,5 @@
+#!/bin/bash
+# runswmm6 - the Zig SWMM6 engine's command line: zig/runswmm6 model.inp r.rpt [r.out] (build it first: zig/build.sh)
+# Written by Claude (Anthropic) for Robert Dickinson's SWMM6 ports; see AI-USE.md.
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec "$HERE/bin/openswmm" "$@"
